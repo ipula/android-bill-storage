@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:background="@drawable/selector_card_background"
+    >
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/list_note_icon"
+            android:layout_gravity="center"
+            android:src="@mipmap/aap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/list_note_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="ascas"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="normal|bold"
+            android:fontFamily="sans-serif"
+            android:textSize="12sp" />
+        <ImageView
+            android:id="@+id/noteImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:src="@mipmap/menularge"/>
+        </LinearLayout>
+
+</LinearLayout>
